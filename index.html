@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HJTC AKU | Rules and Regulations</title>
+
+<style>
+
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --green: #145638;
+    --darkgreen: #0b3825;
+    --lightgreen: #eaf3ed;
+    --white: #ffffff;
+    --text: #26352c;
+    --gray: #f3f5f3;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--gray);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+  /* NAVIGATION */
+nav {
+    background: #174b38;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+nav button {
+    background: transparent;
+    border: 1px solid #e9b949;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+nav button a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+nav button:hover {
+    background: #e9b949;
+    transform: translateY(-3px);
+}
+
+nav button:hover a {
+    color: #174b38;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    nav {
+        gap: 8px;
+        padding: 12px 8px;
+    }
+
+    nav button {
+        padding: 9px 12px;
+    }
+
+    nav button a {
+        font-size: 11px;
+    }
+}
+  
+/* HEADER BACKGROUND */
+
+.hero {
+    min-height: 330px;
+    height: auto;
+
+    background:
+    linear-gradient(
+        rgba(5, 45, 27, 0.78),
+        rgba(5, 45, 27, 0.82)
+    ),
+    url("school-compound.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    padding: 25px 15px;
+    color: white;
+  }
+
+.hero-content {
+    max-width: 950px;
+}
+
+.logo {
+    width: 85px;
+    height: 85px;
+    object-fit: contain;
+    background: white;
+    padding: 6px;
+    border-radius: 50%;
+    border: 3px solid #a6d4b6;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(22px, 4vw, 36px);
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1.3;
+}
+
+.hero .short-name {
+    color: #b9e2c8;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    margin: 10px 0;
+}
+
+.hero h1 {
+    font-size: clamp(30px, 6vw, 55px);
+    margin-top: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hero .tagline {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #e1eee5;
+}
+
+.line {
+    width: 100px;
+    height: 4px;
+    background: #a6d4b6;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: var(--darkgreen);
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a6d4b6;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+/* INTRODUCTION */
+
+.welcome {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 6px solid var(--green);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    margin-bottom: 35px;
+}
+
+.welcome h2 {
+    color: var(--green);
+    margin-bottom: 12px;
+    font-size: 25px;
+}
+
+/* INFORMATION BOX */
+
+.info-box {
+    background: var(--lightgreen);
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 18px;
+    color: var(--darkgreen);
+}
+
+/* RULES HEADER */
+
+.section-heading {
+    text-align: center;
+    margin: 45px 0 25px;
+}
+
+.section-heading h2 {
+    color: var(--green);
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.section-heading p {
+    color: #66736a;
+}
+
+/* SEARCH */
+
+.search-area {
+    max-width: 700px;
+    margin: 25px auto 35px;
+    display: flex;
+    gap: 10px;
+}
+
+.search-area input {
+    flex: 1;
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid #ccd8cf;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-area input:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(20,86,56,0.1);
+}
+
+.search-area button {
+    background: var(--green);
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* RULES GRID */
+
+.rules-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* RULE CARD */
+
+.rule-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #dce5de;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.rule-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+}
+
+.rule-card h3 {
+    background: var(--green);
+    color: white;
+    padding: 17px;
+    font-size: 16px;
+    border-bottom: 4px solid #a6d4b6;
+}
+
+.rule-card ol {
+    padding: 20px 22px 20px 50px;
+}
+
+.rule-card li {
+    padding: 7px 0;
+    border-bottom: 1px solid #edf0ed;
+    font-size: 14px;
+}
+
+.rule-card li::marker {
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* SEARCH RESULTS */
+
+.hidden {
+    display: none !important;
+}
+
+#noResults {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+/* PRINT BUTTON */
+
+.print-button {
+    display: block;
+    margin: 35px auto;
+    background: var(--green);
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* STUDENT PLEDGE */
+
+.pledge {
+    background: var(--green);
+    color: white;
+    padding: 35px;
+    border-radius: 12px;
+    margin-top: 45px;
+}
+
+.pledge h2 {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--darkgreen);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    margin-top: 50px;
+}
+
+footer h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #b9e2c8;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px;
+}
+
+/* MOBILE DESIGN */
+
+@media(max-width: 750px) {
+
+    .hero {
+        min-height: 280px;
+        padding: 20px 12px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 19px;
+    }
+
+    .hero h1 {
+        font-size: 27px;
+        margin-top: 12px;
+    }
+
+    .hero .short-name {
+        font-size: 14px;
+    }
+
+    .hero .tagline {
+        font-size: 13px;
+    }
+
+    .line {
+        margin: 12px auto;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .welcome {
+        padding: 22px;
+    }
+
+    .search-area {
+        flex-direction: column;
+    }
+
+    .search-area button {
+        padding: 14px;
+    }
+
+}
+
+/* PRINT SETTINGS */
+
+@media print {
+
+    nav,
+    .search-area,
+    .print-button {
+        display: none;
+    }
+
+    .rules-grid {
+        display: block;
+    }
+
+    .rule-card {
+        margin-bottom: 20px;
+        break-inside: avoid;
+    }
+
+}
+
+  /* PROFESSIONAL MOBILE RULES LAYOUT */
+
+@media screen and (max-width: 750px) {
+
+    .rules-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .rule-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .rule-card h3 {
+        font-size: 18px;
+        padding: 16px 20px;
+    }
+
+    .rule-card ol {
+        padding: 18px 20px 18px 48px;
+    }
+
+    .rule-card li {
+        font-size: 15px;
+        line-height: 1.8;
+        padding: 8px 0;
+    }
+
+  }
+  /* PROFESSIONAL PRINT SECTION */
+.print-section {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 5%;
+    background: #ffffff;
+}
+
+.print-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #174b38;
+    color: white;
+    border: 1.5px solid #e9b949;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.print-btn:hover {
+    background: #e9b949;
+    color: #174b38;
+    transform: translateY(-2px);
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    .print-section {
+        padding: 10px 15px;
+    }
+
+    .print-btn {
+        padding: 10px 14px;
+        font-size: 11px;
+    }
+}
+
+/* PROFESSIONAL PRINT SETTINGS */
+@media print {
+
+    nav,
+    .print-section {
+        display: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: black !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+        background: white !important;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+  }
+
+  .student-handbook {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #f6d783;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.35);
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin: 0 0 10px 0;
+  }
+  
+</style>
+</head>
+
+<body>
+
+<!-- SCHOOL HEADER -->
+
+<header class="hero" id="home">
+
+<div class="hero-content">
+
+  <h6 class="student-handbook">STUDENT HANDBOOK</h6>
+  
+<img src="school-logo.png"
+class="logo"
+alt="HJTC AKU School Logo">
+
+<h2>HEIGHT OF JOY TECHNICAL COLLEGE, AKU</h2>
+
+<p class="short-name">HJTC AKU</p>
+
+<div class="line"></div>
+
+<h1>RULES AND REGULATIONS</h1>
+
+<p class="tagline">
+Student Handbook | Discipline, Excellence and Responsibility
+</p>
+
+</div>
+
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <button><a href="#home">HOME</a></button>
+    <button><a href="#welcome">ABOUT</a></button>
+    <button><a href="#rules">SCHOOL RULES</a></button>
+    <button><a href="#pledge">STUDENT PLEDGE</a></button>
+    <button><a href="#footer">CONTACT</a></button>
+</nav>
+
+<!-- PRINT BUTTON -->
+<div class="print-section">
+    <button class="print-btn" onclick="printRules()">
+    🖨️ PRINT RULES
+    </button>
+</div>
+
+<main class="container">
+
+<!-- WELCOME SECTION -->
+
+<section class="welcome" id="welcome">
+
+<h2>WELCOME TO HJTC AKU</h2>
+
+<p>
+Welcome to Height of Joy Technical College, Aku.
+Our institution is committed to academic excellence,
+technical development, discipline and good moral values.
+</p>
+
+<div class="info-box">
+
+<strong>OUR CORE VALUES</strong>
+
+<p>
+Discipline | Respect | Honesty | Responsibility | Excellence
+</p>
+
+</div>
+
+</section>
+
+<!-- RULES SECTION -->
+
+<section id="rules">
+
+<div class="section-heading">
+
+<h2>SCHOOL RULES AND REGULATIONS</h2>
+
+<p>
+200 official student guidelines arranged into 20 sections.
+</p>
+
+</div>
+
+<div class="search-area">
+
+<input
+type="search"
+id="searchInput"
+placeholder="Search school rules..."
+oninput="searchRules()">
+
+<button onclick="clearSearch()">Clear</button>
+
+</div>
+
+<div class="rules-grid" id="rulesContainer"></div>
+
+<p id="noResults" class="hidden">
+No matching rules found.
+</p>
+
+<button class="print-button" onclick="window.print()">
+PRINT / SAVE AS PDF
+</button>
+
+</section>
+
+<!-- STUDENT PLEDGE -->
+
+<section class="pledge" id="pledge">
+
+<h2>STUDENT PLEDGE</h2>
+
+<p>
+I pledge to respect my school, teachers and fellow students.
+I promise to obey school regulations, maintain discipline,
+work hard, protect school property and uphold the good name
+of Height of Joy Technical College, Aku.
+</p>
+
+</section>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+<h2>HJTC AKU</h2>
+
+<p>HEIGHT OF JOY TECHNICAL COLLEGE, AKU</p>
+
+<p>Discipline Today, Success Tomorrow.</p>
+
+<p>© 2026 HJTC AKU. All Rights Reserved.</p>
+
+<p>Powered by ENGR SAMUEL UZOH</p>
+
+</footer>
+
+<script>
+
+/* 200 SCHOOL RULES */
+
+const sections = [
+
+["1. GENERAL SCHOOL CONDUCT", [
+"Respect teachers, school staff and fellow students.",
+"Obey all school rules and regulations.",
+"Do not engage in fighting or bullying.",
+"Speak politely and respectfully.",
+"Do not steal or take another person's property.",
+"Maintain good behaviour at all times.",
+"Respect the opinions of others.",
+"Avoid unnecessary noise and disturbances.",
+"Always be honest and truthful.",
+"Protect the reputation of the school."
+]],
+
+["2. ATTENDANCE AND PUNCTUALITY", [
+"Arrive at school on time every day.",
+"Attend school regularly.",
+"Attend morning assembly.",
+"Do not leave school without permission.",
+"Provide an explanation for every absence.",
+"Do not skip lessons.",
+"Attend all scheduled classes.",
+"Return promptly after break.",
+"Ask permission before leaving the classroom.",
+"Follow the school's dismissal procedures."
+]],
+
+["3. SCHOOL UNIFORM AND APPEARANCE", [
+"Wear the approved school uniform.",
+"Keep your uniform clean and neat.",
+"Wear approved school shoes.",
+"Maintain a neat hairstyle.",
+"Keep your fingernails clean.",
+"Do not wear unauthorised jewellery.",
+"Do not alter your uniform without permission.",
+"Wear approved sportswear for physical education.",
+"Maintain good personal hygiene.",
+"Follow the school's dress code."
+]],
+
+["4. CLASSROOM BEHAVIOUR", [
+"Pay attention during lessons.",
+"Do not disturb other students.",
+"Avoid unnecessary noise.",
+"Respect your teachers.",
+"Participate in classroom activities.",
+"Keep your notebooks neat.",
+"Do not sleep during lessons.",
+"Ask questions respectfully.",
+"Do not copy another student's work.",
+"Leave the classroom in an orderly manner."
+]],
+
+["5. ACADEMIC RESPONSIBILITIES", [
+"Complete assignments on time.",
+"Bring necessary textbooks and materials.",
+"Keep your notes up to date.",
+"Participate in classroom activities.",
+"Study regularly.",
+"Prepare adequately for examinations.",
+"Complete your own assignments.",
+"Use the library for academic purposes.",
+"Respect the learning process.",
+"Strive for academic excellence."
+]],
+
+["6. EXAMINATION RULES", [
+"Do not engage in examination malpractice.",
+"Follow all examination instructions.",
+"Arrive at the examination hall on time.",
+"Bring only authorised materials.",
+"Do not communicate during examinations.",
+"Submit your scripts on time.",
+"Do not leave the examination hall without permission.",
+"Maintain silence during examinations.",
+"Respect examination supervisors.",
+"Report examination irregularities."
+]],
+
+["7. TEACHERS AND STAFF RELATIONS", [
+"Respect all teachers and staff.",
+"Listen attentively when teachers speak.",
+"Follow teachers' instructions.",
+"Appreciate their efforts.",
+"Do not insult or threaten staff.",
+"Ask permission before speaking when required.",
+"Cooperate with school authorities.",
+"Value the guidance of your teachers.",
+"Show gratitude and respect.",
+"Avoid confrontation and disrespect."
+]],
+
+["8. RESPECT AND DISCIPLINE", [
+"Obey all school regulations.",
+"Maintain self-discipline.",
+"Control your temper.",
+"Avoid bad company.",
+"Be responsible for your actions.",
+"Show respect to elders.",
+"Accept correction politely.",
+"Do not engage in immoral activities.",
+"Uphold the school's reputation.",
+"Be a good role model."
+]],
+
+["9. SCHOOL PROPERTY", [
+"Take care of school property.",
+"Do not damage furniture or equipment.",
+"Do not write on walls or desks.",
+"Report damaged property.",
+"Keep the school environment clean.",
+"Do not litter.",
+"Use school facilities responsibly.",
+"Help maintain school assets.",
+"Avoid unnecessary waste.",
+"Do not damage school buildings."
+]],
+
+["10. LIBRARY RULES", [
+"Maintain silence in the library.",
+"Handle books carefully.",
+"Do not tear or mark books.",
+"Return borrowed books on time.",
+"Follow the librarian's instructions.",
+"Use the library for reading and research.",
+"Do not bring food or drinks into the library.",
+"Maintain cleanliness.",
+"Respect other library users.",
+"Do not misuse library resources."
+]],
+
+["11. LABORATORY RULES", [
+"Follow laboratory safety instructions.",
+"Handle equipment carefully.",
+"Do not taste laboratory chemicals.",
+"Wear appropriate protective clothing.",
+"Do not conduct experiments alone.",
+"Report hazards immediately.",
+"Use laboratory materials as directed.",
+"Do not play in the laboratory.",
+"Dispose of waste properly.",
+"Follow the supervisor's instructions."
+]],
+
+["12. TECHNICAL WORKSHOP RULES", [
+"Use tools and machines properly.",
+"Follow workshop safety procedures.",
+"Do not play with equipment.",
+"Do not operate machines without permission.",
+"Keep the workshop clean.",
+"Report faulty tools.",
+"Wear protective gear.",
+"Avoid reckless behaviour.",
+"Work under supervision.",
+"Complete workshop tasks as instructed."
+]],
+
+["13. COMPUTER LABORATORY RULES", [
+"Use computers for educational purposes.",
+"Do not install unauthorised software.",
+"Keep your password private.",
+"Do not change system settings.",
+"Avoid visiting inappropriate websites.",
+"Handle equipment with care.",
+"Log out after use.",
+"Report technical faults.",
+"Do not share accounts.",
+"Follow computer laboratory rules."
+]],
+
+["14. SPORTS AND PHYSICAL EDUCATION", [
+"Participate in approved sports activities.",
+"Follow the coach's instructions.",
+"Wear proper sports attire.",
+"Avoid dangerous play.",
+"Respect teammates and opponents.",
+"Keep sports facilities clean.",
+"Do not fight during games.",
+"Play fairly and enjoy the game.",
+"Maintain good sportsmanship.",
+"Follow safety rules."
+]],
+
+["15. SAFETY AND SECURITY", [
+"Do not bring dangerous weapons to school.",
+"Do not bring alcohol or illegal drugs.",
+"Report suspicious activities.",
+"Follow safety instructions.",
+"Do not endanger yourself or others.",
+"Keep school gates and doors secure.",
+"Avoid unauthorised visitors.",
+"Know emergency procedures.",
+"Follow evacuation instructions.",
+"Help maintain school security."
+]],
+
+["16. HEALTH AND HYGIENE", [
+"Keep your body clean.",
+"Wash your hands regularly.",
+"Use the toilet properly.",
+"Dispose of waste correctly.",
+"Drink clean water.",
+"Avoid spreading diseases.",
+"Report illness to the school nurse or designated staff.",
+"Keep the environment clean.",
+"Do not smoke or vape.",
+"Practise good health habits."
+]],
+
+["17. BULLYING AND HARASSMENT", [
+"Do not bully or intimidate anyone.",
+"Respect differences among students.",
+"Report bullying or harassment.",
+"Support your fellow students.",
+"Use kind and encouraging words.",
+"Avoid cyberbullying.",
+"Protect others from harm.",
+"Promote peace and unity.",
+"Stand up against injustice safely.",
+"Treat everyone with dignity."
+]],
+
+["18. MORAL CONDUCT", [
+"Be honest and truthful.",
+"Avoid immoral acts.",
+"Show kindness and helpfulness.",
+"Be generous and share.",
+"Avoid indecent behaviour.",
+"Respect family and community.",
+"Live a good and responsible life.",
+"Follow the path of righteousness.",
+"Build a positive reputation.",
+"Always do what is right."
+]],
+
+["19. SCHOOL ASSEMBLY", [
+"Attend all school assemblies.",
+"Stand respectfully during assembly.",
+"Listen to announcements.",
+"Follow the assembly programme.",
+"Keep quiet and orderly.",
+"Show school spirit.",
+"Sing the school anthem properly.",
+"Leave only with permission.",
+"Encourage unity and teamwork.",
+"Participate in school activities."
+]],
+
+["20. DISCIPLINARY MEASURES", [
+"Students must obey school rules.",
+"Violations may attract disciplinary action.",
+"Students may receive verbal or written warnings.",
+"Parents or guardians may be informed.",
+"Serious offences may be referred to school management.",
+"Students should be given a fair opportunity to explain incidents.",
+"Counselling may be provided where appropriate.",
+"Detention may be applied in accordance with school policy.",
+"Suspension or expulsion must follow due process.",
+"Every student must contribute to a safe and disciplined school."
+]]
+
+];
+
+
+/* DISPLAY ALL 200 RULES */
+
+const container = document.getElementById("rulesContainer");
+
+sections.forEach((section, index) => {
+
+    const card = document.createElement("div");
+
+    card.className = "rule-card";
+
+    const heading = document.createElement("h3");
+
+    heading.textContent = section[0];
+
+    card.appendChild(heading);
+
+    const list = document.createElement("ol");
+
+    list.start = index * 10 + 1;
+
+    section[1].forEach(rule => {
+
+        const item = document.createElement("li");
+
+        item.textContent = rule;
+
+        list.appendChild(item);
+
+    });
+
+    card.appendChild(list);
+
+    container.appendChild(card);
+
+});
+
+
+/* SEARCH FUNCTION */
+
+function searchRules() {
+
+    const search = document
+    .getElementById("searchInput")
+    .value.toLowerCase();
+
+    const cards = document.querySelectorAll(".rule-card");
+
+    let found = 0;
+
+    cards.forEach(card => {
+
+        const text = card.innerText.toLowerCase();
+
+        if (text.includes(search)) {
+
+            card.classList.remove("hidden");
+
+            found++;
+
+        } else {
+
+            card.classList.add("hidden");
+
+        }
+
+    });
+
+    document.getElementById("noResults")
+    .classList.toggle("hidden", found !== 0);
+
+}
+
+
+/* CLEAR SEARCH */
+function clearSearch() {
+
+    document.getElementById("searchInput").value = "";
+
+    searchRules();
+
+}
+
+/* PRINT SCHOOL RULES */
+function printRules() {
+    setTimeout(function() {
+        window.print();
+    }, 300);
+    }
+
+</script>
+  
+
+</body>
+</html>
